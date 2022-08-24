@@ -42,7 +42,7 @@ Startup.Name = "Startup"
 scream.SoundId = "rbxassetid://252192336"
 scream.Name = "Scream"
 
-ScreenGui.Parent = player:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
 ScreenGui.ResetOnSpawn = false
 
