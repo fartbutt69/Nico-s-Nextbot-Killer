@@ -38,7 +38,8 @@ local Startup = Instance.new("Sound",ScreenGui)
 local scream = Instance.new("Sound",ScreenGui)
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
+ScreenGui.ResetOnSpawn = false
 
 Startup.SoundId = "rbxassetid://5857614116"
 Startup.Name = "Startup"
