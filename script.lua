@@ -3,12 +3,12 @@
 	Nico's Nextbot Killer
 	Created by Devamspion
 
-	If using in your Roblox exploit. Use this instead to autoupdate.
-	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
-
-	This is for educational purposes only.
-
 ]]
+
+--[[if game.GameId ~= 10118559731 then
+	warn("\nNico's Nextbot Killer : Created by Devamspion on V3rmillion.\n\nLoading Unsuccessful.\n\nPlease only use this script on the official nico's nextbots.")
+	return
+end]]
 
 --// Toggles
 
@@ -30,21 +30,21 @@ local Intro = Instance.new("ImageLabel")
 local Killa = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
 local Name = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
 local ESP = Instance.new("TextLabel")
 local FasterRe = Instance.new("TextLabel")
 local DoorSpam = Instance.new("TextLabel")
 local Startup = Instance.new("Sound",ScreenGui)
 local scream = Instance.new("Sound",ScreenGui)
 
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
 Startup.SoundId = "rbxassetid://5857614116"
 Startup.Name = "Startup"
 
 scream.SoundId = "rbxassetid://252192336"
 scream.Name = "Scream"
-
-ScreenGui.Parent = game.CoreGui
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global
-ScreenGui.ResetOnSpawn = false
 
 Intro.Name = "Intro"
 Intro.Parent = ScreenGui
@@ -86,6 +86,9 @@ Name.TextColor3 = Color3.fromRGB(255, 255, 255)
 Name.TextScaled = true
 Name.TextSize = 14.000
 Name.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = Intro
+UIAspectRatioConstraint.AspectRatio = 1.209
 
 ESP.Name = "ESP"
 ESP.Parent = ScreenGui
