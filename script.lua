@@ -3,6 +3,11 @@
 	Nico's Nextbot Killer
 	Created by Devamspion
 
+	If using in your Roblox exploit. Use this instead to autoupdate.
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/fartbutt69/Nico-s-Nextbot-Killer/main/script.lua", true))()
+
+	This is for educational purposes only.
+
 ]]
 
 --// Toggles
